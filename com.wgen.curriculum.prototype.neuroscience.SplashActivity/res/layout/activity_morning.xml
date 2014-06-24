@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/headDownImageView"
+        android:contentDescription="@string/head_down_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        android:src="@drawable/neuro_0001_icon_headdown" />
+
+    <ImageView
+        android:id="@+id/headDownTextView"
+        android:contentDescription="@string/head_down_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headDownImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/neuro_0000_text_closeyoureyes" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/headDownImageView"
+        android:layout_below="@+id/headDownTextView"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/alarm_stop_button"
+        android:onClick="onAlarmClockClicked" />
+
+    <Button
+        android:id="@+id/buttonToLayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonStop"
+        android:layout_alignBottom="@+id/buttonStop"
+        android:layout_alignRight="@+id/headDownTextView"
+        android:text="@string/button_to_layar"
+        android:onClick="onToLayarClick"
+        android:visibility="invisible"
+         />
+
+</RelativeLayout>

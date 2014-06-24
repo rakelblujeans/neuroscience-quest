@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:contentDescription="@string/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/neuro_0030_background" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:contentDescription="@string/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/neuro_0029_wave" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:contentDescription="@string/brain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="212dp"
+        android:background="@android:color/transparent" 
+        android:src="@drawable/neuro_brain_blue"
+        android:tag="neuro_brain_blue"
+        android:onClick="brainSelected"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:background="@android:color/transparent" 
+        android:contentDescription="@string/brain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginRight="74dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/neuro_brain_red"
+        android:tag="neuro_brain_red"
+        android:onClick="brainSelected"        
+         />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:background="@android:color/transparent" 
+        android:contentDescription="@string/brain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton3"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:src="@drawable/neuro_brain_purple"
+        android:tag="neuro_brain_purple"
+        android:onClick="brainSelected"
+         />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:background="@android:color/transparent" 
+        android:contentDescription="@string/brain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_marginRight="57dp"
+        android:src="@drawable/neuro_brain_green"
+        android:tag="neuro_brain_green"
+        android:onClick="brainSelected"
+         />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="49dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/brain"
+        android:src="@drawable/neuro_brain_gold"
+        android:tag="neuro_brain_gold"
+        android:onClick="brainSelected"
+         />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:contentDescription="@string/title_activity_neuroscience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_marginBottom="21dp"
+        android:src="@drawable/neuro_0028_title" />
+    
+</RelativeLayout>

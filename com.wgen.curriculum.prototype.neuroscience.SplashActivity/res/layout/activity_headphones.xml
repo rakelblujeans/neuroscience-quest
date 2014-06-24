@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewHeadphoneIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:contentDescription="@string/headphone_icon"
+        android:src="@drawable/neuro_0005_icon_headphone">
+        <requestFocus />
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageViewHeadphonesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="349dp"
+        android:contentDescription="@string/head_down_text"
+        android:src="@drawable/neuro_0004_text_please_putyourhead" />
+
+    <EditText
+        android:id="@+id/passwordTextbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewHeadphonesText"
+        android:layout_below="@+id/imageViewHeadphonesText"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/neuro_0003_password_input"
+        android:contentDescription="@string/password_textbox"
+        android:ems="10"
+        android:inputType="text"
+        android:onClick="onEnterPasswordTextbox"
+        android:text="@string/input_password"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/imageViewGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/passwordTextbox"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/passwordTextbox"
+        android:contentDescription="@string/password_input"
+        android:onClick="checkPassword"
+        android:src="@drawable/neuro_0002_password_go" />
+
+</RelativeLayout>

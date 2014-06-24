@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewBrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/neuro_brain_gold"
+        android:contentDescription="@string/main_brain"
+         />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="45dp"
+        android:layout_toRightOf="@+id/imageViewBrain"
+        android:background="@android:color/transparent"
+        android:onClick="brainNotConfirmed"
+        android:src="@drawable/neuro_0013_no_nonactive"
+        android:contentDescription="@string/yes_button"
+         />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_marginRight="62dp"
+        android:layout_toLeftOf="@+id/imageViewBrain"
+        android:background="@android:color/transparent"
+        android:onClick="brainConfirmed"
+        android:src="@drawable/neuro_0011_yes_nonactive"
+        android:contentDescription="@string/no_button"
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="@string/brain_selected_descrip"
+        android:textSize="50dp" />
+
+</RelativeLayout>
